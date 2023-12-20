@@ -2,11 +2,31 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <style>
+        body {
+        font-family: 'Caveat', cursive; /* change your handwriting font */
+        text-align: center;
+        margin-top: 50px;
+        }
+
+        #prompt {
+        color: lightblue;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        }
+
+        #answer {
+        color: red;
+        font-size: 2em;
+        line-height: 4em;
+        }
     </style>
 </head>
 
 <body>
+    <div id="prompt">Ask me anything</div>
+    <input type="text" id="question" placeholder="Type your question...">
     <h1>The magic 8 ball</h1>
     <input /><br />
     <x-magic />
